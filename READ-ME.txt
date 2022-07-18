@@ -1,0 +1,14 @@
+  =>  Template Name    : ProMan - Personal Portfolio HTML Template
+
+  =>  Template Link    : https://htmlcodex.com/personal-portfolio-html-template
+
+  =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+
+  =>  Template Author  : HTML Codex
+
+  =>  Author Website   : https://htmlcodex.com
+
+  Calendly token  : eyJraWQiOiIxY2UxZTEzNjE3ZGNmNzY2YjNjZWJjY2Y4ZGM1YmFmYThhNjVlNjg0MDIzZjdjMzJiZTgzNDliMjM4MDEzNWI0IiwidHlwIjoiUEFUIiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiJodHRwczovL2F1dGguY2FsZW5kbHkuY29tIiwiaWF0IjoxNjU3MzAzNjY1LCJqdGkiOiI3NDcxZjY4Yy1iZmRkLTQ2NTUtODczOC02Njg5YjllMjY3NDQiLCJ1c2VyX3V1aWQiOiJiMDE2MDEzMy02ZDdhLTQxNGEtYTg3Ni1mN2JjMTk1NjQ5ZWQifQ.1qPMzkWoiR6K22SWTvcuDbzNqi4bwRPxzg58owRdWz9e6VhDG-tQWUuWgoZQ0aeC25zlf-s3GKXjqKqBIorODQ
+
+  Key Id : rzp_test_hoOj0RMb9WdKoh
+  Key Secret: 58XZpvCu8BpWbD8JsjsAnqYs
