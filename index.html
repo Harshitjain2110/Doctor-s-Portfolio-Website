@@ -680,14 +680,17 @@
                     </form> -->
                     <button class="btn btn-primary py-3 px-5" id="rzp-button1" style="display: none;">Proceed To Pay</button>
                     <!-- Calendly inline widget begin -->
-                    <div class="calendly-inline-widget" style="min-width:320px;height:580px;position:relative;bottom:80px;" data-auto-load="false">
-                        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-                        <script>
-                            Calendly.initInlineWidget({
-                                url: 'https://calendly.com/jainharshit21102000/doctor-s-appointment?hide_gdpr_banner=1&hide_event_type_details=1'
-                            });
-                        </script>
+                    <div class="calender">
+                        <div class="calendly-inline-widget" style="min-width:320px;height:580px;position:relative;bottom:80px;" data-auto-load="false">
+                            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+                            <script>
+                                Calendly.initInlineWidget({
+                                    url: 'https://calendly.com/jainharshit21102000/doctor-s-appointment?hide_gdpr_banner=1&hide_event_type_details=1'
+                                });
+                            </script>
+                        </div>
                     </div>
+                    
                     <!-- Calendly inline widget end -->
                 </div>
             </div>
@@ -740,7 +743,7 @@
             if(isCalendlyEvent(e)) {
                 /* Example to get the name of the event */
                 console.log("Event name:", e.data.event);
-                if(e.data.event==="calendly.event_scheduled"){
+                if(e.data.event==="calendly.date_and_time_selected"){
                     document.getElementById('rzp-button1').click();
                 }
     
@@ -803,6 +806,7 @@
                 "image": "https://example.com/your_logo",
                 "order_id": orderData.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
                 "handler": function (response){
+                    console.log("payment successful");
                     alert(response.razorpay_payment_id);
                     alert(response.razorpay_order_id);
                     alert(response.razorpay_signature);
@@ -829,6 +833,7 @@
             rzp1.open();
 
             rzp1.on('payment.failed', function (response){
+                document.getElementsByClassName("calender").classList.add("disabled");
                 alert(response.error.code);
                 alert(response.error.description);
                 alert(response.error.source);

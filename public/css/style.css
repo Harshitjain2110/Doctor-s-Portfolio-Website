@@ -428,3 +428,8 @@
 .testimonial-carousel .owl-dot.active::after {
     background: var(--primary);
 }
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
